@@ -1,0 +1,7 @@
+# IntelliJ junk
+*.iml
+.idea/
+
+# Remove the target folder too
+target/
+

@@ -1,0 +1,21 @@
+<?xml version="1.0"?>
+
+<web-app>
+
+    <!-- BEGIN SWAGGER CONFIGURATION NEEDED IN web.xml for SWAGGER TO WORK -->
+    <servlet>
+        <servlet-name>DefaultJaxrsConfig</servlet-name>
+        <servlet-class>com.wordnik.swagger.jaxrs.config.DefaultJaxrsConfig</servlet-class>
+        <init-param>
+            <param-name>api.version</param-name>
+            <param-value>1.0.0</param-value>
+        </init-param>
+        <load-on-startup>1</load-on-startup>
+    </servlet>
+
+    <listener>
+        <listener-class>org.jboss.resteasy.plugins.server.servlet.ResteasyBootstrap</listener-class>
+    </listener>
+    <!-- END SWAGGER CONFIGURATION NEEDED IN web.xml for SWAGGER TO WORK -->
+
+</web-app>
